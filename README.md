@@ -1,10 +1,17 @@
-### 这个程序用于解决局域网中的几台电脑、手机之间临时性互相传送文件问题
-编译安装：
+## 简介
 
-使用`go`编译：
+本项目主要用于搭建一个基于 web 的文件服务，提供类似于 Apache index 的文件查看功能，同时也提供文件上传入口。 
+
+## 安装与使用
+
+可以使用源码编译安装，亦可直接使用编译好的二进制文件直接运行。
+
+### 使用`go`编译
+
 `go get github.com/rocket049/fileserver`
 
-直接下载可执行程序：
+### 直接下载可执行程序
+
 [https://github.com/rocket049/fileserver/releases](https://github.com/rocket049/fileserver/releases)
 
 下载解压后，把可执行程序移动到 `PATH` 中使用。
@@ -22,9 +29,12 @@
 
 同时也会显示一个二维码，可以用手机浏览器扫描访问。
 
-建议：使用另一个小工具 `tray-controller` 控制本程序，方便随时打开和关闭。
- `tray-controller` 的主页：[https://github.com/rocket049/tray-controller](https://github.com/rocket049/tray-controller)
-
 #### 专用图片显示程序
 
 目录中的`showImg`程序是专用图片显示程序，编译后随便软链接到到某个包含在`PATH`中的目录就可以被`fileserver`调用。
+
+
+## 声明
+
+本项目 Fork 自
+[https://github.com/rocket049/fileserver/releases](https://github.com/rocket049/fileserver/releases)
